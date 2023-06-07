@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
@@ -20,12 +20,15 @@
 </head>
 <body>
     
-    <header class="d-flex header-area fixed-top" >
-        <nav class="navbar navbar-expand-lg">
+   <!--   <header class="header-area fixed-top" >
+        <nav class="navbar navbar-expand-lg navbar-collapse">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="assets/Logo12.png" alt="" class="logo">
                 </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
@@ -46,20 +49,50 @@
                     </div>
             </div>
         </nav>
-    </header>
+    </header>  -->
+    <nav class="navbar navbar-expand-lg header-area fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="assets/Logo12.png" alt="" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> 
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Planets <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Galeries</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Exploration</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Log </a>
+              </li>
+             
+            
+            
+            
+           
+          </ul>
+          
+        </div>
+      </nav>
     
-    <section class="hero wrapper">
-        <div class="image-container">
-          <img src="assets/titan_large-removebg-preview.png" alt="">
-          <div class="text-container">
+    <section class="hero d-flex align-items-center wrapper">
+        <!-- <div class="d-flex image-container"> -->
+          <!-- <img class="img-fluid" src="assets/titan_large-removebg-preview.png" alt=""> -->
+          <div class="container">
             <h1>Where Possibilities Ascend</h1>
             <h2>TITAN — A MOON WITH AN ATMOSPHERE</h2>
-            <button type="button">Explore more</button>
+            <button class="ms-5" type="button">Explore more</button>
           </div>
-        </div>
-    </section>
+        <!-- </div> -->
+    </section> 
 
-    <section class="about">
+    <section class="container-fluid about">
         <div class="row">
             <div class="col">
                 <h1>About Titan</h1>
@@ -69,12 +102,27 @@
                     Although the atmosphere looks featureless when photographed from afar, some banding was detected in specially processed Voyager 1 images. <br>Titan is primarily composed of ice and rocky material, which is likely differentiated into a rocky core surrounded by various layers of ice, including a crust of ice Ih and a subsurface layer of ammonia-rich liquid water.[16] Much as with Venus before the Space Age, the dense opaque atmosphere prevented understanding of Titan's surface until the Cassini–Huygens mission in 2004 provided new information, including the discovery of liquid hydrocarbon lakes in Titan's polar regions. The geologically young surface is generally smooth, with few impact craters, although mountains and several possible cryovolcanoes have been found.</p>
             </div>
         </div>
+    </section> 
 
-        
+    <section class="d-flex galerie">
+        <div class="container owl-carousel">
+            <img src="assets/Corousel1.png" alt="">
+            <img src="assets/Corousel2.png" alt="">
+            <img src="assets/corousel.png" alt="">
+            <img src="assets/corousel6.png" alt="">
+            <img src="assets/corousel5.jpg" alt="">
+          </div>
+        </div>
 
 
     </section>
     
     
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="js/jquery.js"></script>
+<script src="js/owl.corousel.js"></script>
+<script src="js/js.js"></script>
+<script src="js/top.js"></script>
 </html>
