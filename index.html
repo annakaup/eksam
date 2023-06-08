@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400&family=Montserrat:wght@200;400;500&display=swap" rel="stylesheet">
-
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -23,59 +24,31 @@
     
 <header>
 
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <a class="navbar-brand" href="#"><img src="assets/Logo12.png" alt="" class="logo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Planets <span class="sr-only"></span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Galeries</a>
-        </li>
-        <li class="nav-item">
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <img src="assets/Logo12.png" alt="" class="logo">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarNav" style="">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Planets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Galerie</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#">Exploration</a>
           </li>
           <li class="nav-item log">
-            <a class="nav-link" href="#">Log in</a>
+            <a class="nav-link">Log in</a>
           </li>
-        
-      </ul>
-     
+        </ul>
+      </div>
     </div>
   </nav>
- <!--    <nav class="navbar navbar-expand-lg header-area fixed-top">
-        <a class="navbar-brand" href="#">
-            <img src="assets/Logo12.png" alt="" class="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button> 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Planets <span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Galeries</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Exploration</a>
-              </li>
-              <li class="nav-item log">
-                <a class="nav-link" href="#">Log in</a>
-              </li>
-            </ul>
-          
-        </div>
-      </nav> -->
     </header>     
     
     <section class="hero d-flex align-items-center wrapper">
@@ -187,6 +160,7 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/js.js"></script>
 <script src="js/top.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
