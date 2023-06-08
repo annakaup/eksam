@@ -59,7 +59,9 @@ body {
   color: #D9D9D9;
   
 }
-
+.modal-content {
+  background-color: #284C41;
+}
 .navbar-nav a {
    
     color: #D9D9D9;
@@ -119,11 +121,9 @@ section {
     display: flex;
 }
 /* Start Main */
-body {
-    margin-left: 3rem;
-    margin-right: 3rem;
-    
-}
+
+
+
 .log {
     margin-left: 20rem;
     margin-right: 3rem;
@@ -166,7 +166,7 @@ body {
     background-position: right center;
     height: 834px;
     margin-top: 100px; 
-    margin: 0;
+    margin-bottom: -134px;
   }
   .image-container {
     position: relative;
@@ -248,8 +248,8 @@ body {
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-left: auto;
-        margin-right: auto;
+       
+        max-width: 100%;
       } 
 
     footer {
@@ -287,10 +287,21 @@ i {
     right: 10px;
     display: none;
   }
+  .aboutp {
+    align-items: center;
+  }
+
+  .explorer {
+    align-items: center;
+    padding-top: 120px;
+
+  }
+
+  
 /* End Main */
 
 /* Responsive */
-@media only screen and (max-width: 767px) {
+ @media only screen and (max-width: 767px) {
     img {
       width: 70%;
     }
@@ -304,7 +315,8 @@ i {
     }
 
 }
-@media(max-width: 767px){
+
+@media(min-width: 320px) and (max-width: 480px){
     footer {
         height: 900px;
         width: auto;
@@ -312,62 +324,128 @@ i {
         justify-content: center;
         align-items: center;
     }
-}
-@media(max-width: 767px){
-    .about h1 {
-        font-size: 85%;
-        width: auto;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-}
-@media(max-width: 767px){
+
     .about p {
 
-        font-size: 85%;
-        width: auto;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-} 
-@media(max-width: 767px){
-    .explore h1 {
-        font-size: 85%;
-        width: auto;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
+      font-size: 85%;
+      width: auto;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin-top: -200px;
+  }
+  .about h1{
+    font-size: 85%;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;   
 }
-@media(max-width: 767px){
-    .explore p {
+.explore {
+  font-size: 70%;
+  width: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  
+}
+
+
+.aboutp {
+  font-size: 55%;
+  width: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  
+  
+}
+.explore p {
+  font-size: 70%;
+  width: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  
+}
+.explore h1 {
+  font-size: 50%;
+  width: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  
+}
+.hero h1 {
+  font-size:85%;
+  width: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+}
+ @media(min-width: 480px) and (max-width: 767px)  {
+    .about h1{
         font-size: 85%;
         width: auto;
         text-align: center;
         justify-content: center;
-        align-items: center;
+        align-items: center;   
     }
-}
-@media(max-width: 767px){
+    .hero h1 {
+      font-size:  100%;
+      width: auto;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+  }
+
+    .about p {
+
+      font-size: 100%;
+      width: auto;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin-top: -200px;
+  }
   .explore p {
-      font-size:85%;
-      width: auto;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
+    font-size: 80%;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; */
   }
+  .aboutp {
+    font-size: 80%;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
+}
+/*  */
 @media(max-width: 767px){
-  .hero h1 {
-      font-size:85%;
+  .explorer {
+      font-size: 50%;
       width: auto;
       text-align: center;
       justify-content: center;
       align-items: center;
   }
+  .explore h1 {
+    font-size: 80%;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
+  
+}
+
  @media(max-width: 767px){
   .hero h2 {
       font-size:85%;
@@ -375,7 +453,7 @@ i {
       text-align: center;
       justify-content: center;
       align-items: center;
-      text
+      
   }
 }
 @media(max-width: 767px){
@@ -386,4 +464,4 @@ i {
       justify-content: center;
       align-items: center;
   }
-}
+} 

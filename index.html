@@ -22,7 +22,36 @@
 <body>
     
 <header>
-    <nav class="navbar navbar-expand-lg header-area fixed-top">
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href="#"><img src="assets/Logo12.png" alt="" class="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Planets <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Galeries</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Exploration</a>
+          </li>
+          <li class="nav-item log">
+            <a class="nav-link" href="#">Log in</a>
+          </li>
+        
+      </ul>
+     
+    </div>
+  </nav>
+ <!--    <nav class="navbar navbar-expand-lg header-area fixed-top">
         <a class="navbar-brand" href="#">
             <img src="assets/Logo12.png" alt="" class="logo">
         </a>
@@ -46,7 +75,7 @@
             </ul>
           
         </div>
-      </nav>
+      </nav> -->
     </header>     
     
     <section class="hero d-flex align-items-center wrapper">
@@ -55,17 +84,37 @@
           <div class="container">
             <h1>Where Possibilities Ascend</h1>
             <h2>TITAN — A MOON WITH AN ATMOSPHERE</h2>
-            <button class="ms-5" type="button">Explore more</button>
+            <button class="ms-5" data-bs-toggle="modal" data-bs-target="#myModal" type="button">Explore more</button>
+            <div class="modal" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+            
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Planets</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+            
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <img src="assets/planets3x3_pluto_colorMercury_axis_tilt_1080p.00001_print.jpg" alt="" width="100%">
+                    <p>Our solar system is made up of a star—the Sun—eight planets, 146 moons, a bunch of comets, asteroids and space rocks, ice, and several dwarf planets, such as Pluto. The eight planets are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. Mercury is closest to the Sun. Neptune is the farthest.</p>
+                  </div>
+            
+            
+                </div>
+              </div>
+            </div>
           </div>
         <!-- </div> -->
     </section> 
 
     <section class="container d-flex about">
-        <div class="row">
-            <div class="col-lg-12">
+        <div class="row aboutp">
+            <div class="col-md-6">
                 <h1>About Titan</h1>
             </div>
-            <div class="col-lg-12">
+            <div class="col-md-6">
                 <p>Titan, once thought to be the largest moon in the solar system, turned out to be slightly smaller than Jupiter's moon Ganymede when photographed by Voyager 1. It is, nonetheless, larger than the planet Mercury. The surface of Titan is obscured by a dense atmosphere of nitrogen and methane, which made the moon appear larger in telescopic observations.
                     Although the atmosphere looks featureless when photographed from afar, some banding was detected in specially processed Voyager 1 images. <br>Titan is primarily composed of ice and rocky material, which is likely differentiated into a rocky core surrounded by various layers of ice, including a crust of ice Ih and a subsurface layer of ammonia-rich liquid water.[16] Much as with Venus before the Space Age, the dense opaque atmosphere prevented understanding of Titan's surface until the Cassini–Huygens mission in 2004 provided new information, including the discovery of liquid hydrocarbon lakes in Titan's polar regions. The geologically young surface is generally smooth, with few impact craters, although mountains and several possible cryovolcanoes have been found.</p>
             </div>
@@ -88,12 +137,12 @@
     </section>
 
    <section class="container-fluid explore">
-        <div class="row">
-          <div class="col-lg-12">
+        <div class="row explorer">
+          <div class="col-md-6">
             <h1>Exploration</h1>
             <button type="button">Explore more</button>
           </div>
-          <div class="col-lg-12">
+          <div class="col-md-6">
             <p>Titan is one of the seven gravitationally rounded moons in orbit around Saturn, and the second most distant from Saturn of those seven. Frequently described as a planet-like moon, Titan is 50% larger (in diameter) than Earth's Moon and 80% more massive. It is the second-largest moon in the Solar System after Jupiter's moon Ganymede, and is larger than the planet Mercury, but only 40% as massive.</p>
             <p>Discovered in 1655 by the Dutch astronomer Christiaan Huygens, Titan was the first known moon of Saturn, and the sixth known planetary satellite (after Earth's moon and the four Galilean moons of Jupiter). Titan orbits Saturn at 20 Saturn radii. From Titan's surface, Saturn subtends an arc of 5.09 degrees, and if it were visible through the moon's thick atmosphere, it would appear 11.4 times larger in the sky.</p>
           </div>
@@ -107,11 +156,11 @@
     <div class="container-fluid d-flex">
 
         <div class="container-fluid row d-flex">
-            <div class="col-lg-4"><a href="#">
+            <div class="col-md-4"><a href="#">
                 <img src="assets/Logo12.png" alt="" class="logo">
             </a></div>
-            <div class="col-lg-4"><ul><li>Contact</li><li>About us</li><li>Privacy</li></ul></div>
-            <div class="col-lg-4 social">
+            <div class="col-md-4"><ul><li>Contact</li><li>About us</li><li>Privacy</li></ul></div>
+            <div class="col-md-4">
                 <a href=""><i class="fa-brands fa-square-twitter"></i></a>
                 <a href=""><i class="fa-brands fa-square-facebook"></i></a>
                 <a href=""><i class="fa-brands fa-square-instagram"></i></a>
